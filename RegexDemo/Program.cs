@@ -14,7 +14,8 @@ namespace RegexDemo
         {
           
             RegexExample regexExample = new RegexExample();
-            regexExample.MyRegex();
+           // regexExample.MyRegex();
+            regexExample.CheckName("");
             Console.ReadLine();
         }
     }

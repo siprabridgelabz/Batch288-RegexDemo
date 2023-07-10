@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace RegexDemo
 {
-    public  class RegexExample
+    public class RegexExample
     {
         static string pattern = "^cen$";
         //^it will indicate string start
@@ -29,6 +30,24 @@ namespace RegexDemo
                 Console.WriteLine("string is not  match the pattern");
 
             }
+
+
+        }
+        public void CheckName(string name)
+
+        {
+            string myName = "^[A-Z][a-z]{3,}?$";
+            if (Regex.IsMatch(myName, name))
+            {
+                Console.WriteLine("string is match the pattern");
+            }
+            else
+            {
+                Console.WriteLine("string is not  match the pattern");
+
+            }
         }
     }
+
+
 }
