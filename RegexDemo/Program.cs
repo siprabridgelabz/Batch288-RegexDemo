@@ -16,6 +16,7 @@ namespace RegexDemo
             RegexExample regexExample = new RegexExample();
            // regexExample.MyRegex();
             regexExample.CheckName("");
+            regexExample.LastName("mishra");
             Console.ReadLine();
         }
     }
